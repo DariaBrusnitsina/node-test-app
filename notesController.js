@@ -4,7 +4,7 @@ const chalk = require("chalk");
 const notesPath = path.join(__dirname, "db.json")
 
 async function addNote(title) {
-    const notes =await getNotes()
+    const notes = await getNotes()
     const note = {
         title,
         id: Date.now().toString()
